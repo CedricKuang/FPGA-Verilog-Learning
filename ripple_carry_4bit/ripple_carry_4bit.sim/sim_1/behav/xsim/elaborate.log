@@ -1,0 +1,16 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b4af87e542694f8dba358e0c4e0ce9a7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ripple_carry_behav xil_defaultlib.ripple_carry xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'cin' [D:/UCLA/OTHERS/interns/FPGA/ripple_carry_4bit/ripple_carry_4bit.srcs/sources_1/new/top.v:20]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'cout' [D:/UCLA/OTHERS/interns/FPGA/ripple_carry_4bit/ripple_carry_4bit.srcs/sources_1/new/top.v:23]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fa
+Compiling module xil_defaultlib.ripple_carry
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ripple_carry_behav
