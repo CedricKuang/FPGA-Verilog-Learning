@@ -1,0 +1,23 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 0e2f321810f946838196c5de22225608 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/UCLA/OTHERS/interns/FPGA/schematic_design/schematic_design.ip_user_files/bd/design_1/ipshared/d2a3/ha.v" Line 2. Module ha doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/UCLA/OTHERS/interns/FPGA/schematic_design/schematic_design.ip_user_files/bd/design_1/ipshared/d2a3/ha.v" Line 2. Module ha doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/UCLA/OTHERS/interns/FPGA/schematic_design/schematic_design.ip_user_files/bd/design_1/ipshared/d2a3/ha.v" Line 2. Module ha doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/UCLA/OTHERS/interns/FPGA/schematic_design/schematic_design.ip_user_files/bd/design_1/ipshared/d2a3/ha.v" Line 2. Module ha doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ha
+Compiling module xil_defaultlib.design_1_Half_adder_0_0
+Compiling module xil_defaultlib.design_1_Half_adder_0_1
+Compiling module util_vector_logic_v2_0_1.util_vector_logic_v2_0_1_util_ve...
+Compiling module xil_defaultlib.design_1_util_vector_logic_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_1_wrapper_behav

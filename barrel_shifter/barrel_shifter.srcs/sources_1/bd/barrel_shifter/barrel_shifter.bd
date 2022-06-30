@@ -1,0 +1,147 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../barrel_shifter.gen/sources_1/bd/barrel_shifter",
+      "name": "barrel_shifter",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2"
+    },
+    "design_tree": {
+      "m1": "",
+      "m2": "",
+      "m3": "",
+      "m4": ""
+    },
+    "ports": {
+      "w0": {
+        "direction": "I"
+      },
+      "w1": {
+        "direction": "I"
+      },
+      "w2": {
+        "direction": "I"
+      },
+      "w3": {
+        "direction": "I"
+      },
+      "s": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "y0": {
+        "direction": "O"
+      },
+      "y1": {
+        "direction": "O"
+      },
+      "y2": {
+        "direction": "O"
+      },
+      "y3": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "m1": {
+        "vlnv": "xilinx.com:user:mux_4to1:1.0",
+        "xci_name": "barrel_shifter_mux_4to1_0_0",
+        "xci_path": "ip\\barrel_shifter_mux_4to1_0_0\\barrel_shifter_mux_4to1_0_0.xci",
+        "inst_hier_path": "m1"
+      },
+      "m2": {
+        "vlnv": "xilinx.com:user:mux_4to1:1.0",
+        "xci_name": "barrel_shifter_mux_4to1_0_1",
+        "xci_path": "ip\\barrel_shifter_mux_4to1_0_1\\barrel_shifter_mux_4to1_0_1.xci",
+        "inst_hier_path": "m2"
+      },
+      "m3": {
+        "vlnv": "xilinx.com:user:mux_4to1:1.0",
+        "xci_name": "barrel_shifter_mux_4to1_1_0",
+        "xci_path": "ip\\barrel_shifter_mux_4to1_1_0\\barrel_shifter_mux_4to1_1_0.xci",
+        "inst_hier_path": "m3"
+      },
+      "m4": {
+        "vlnv": "xilinx.com:user:mux_4to1:1.0",
+        "xci_name": "barrel_shifter_mux_4to1_1_1",
+        "xci_path": "ip\\barrel_shifter_mux_4to1_1_1\\barrel_shifter_mux_4to1_1_1.xci",
+        "inst_hier_path": "m4"
+      }
+    },
+    "nets": {
+      "x0_0_1": {
+        "ports": [
+          "w0",
+          "m1/x0",
+          "m2/x3",
+          "m3/x2",
+          "m4/x1"
+        ]
+      },
+      "x1_0_1": {
+        "ports": [
+          "w1",
+          "m1/x1",
+          "m2/x0",
+          "m3/x3",
+          "m4/x2"
+        ]
+      },
+      "x2_0_1": {
+        "ports": [
+          "w2",
+          "m1/x2",
+          "m2/x1",
+          "m3/x0",
+          "m4/x3"
+        ]
+      },
+      "x3_0_1": {
+        "ports": [
+          "w3",
+          "m1/x3",
+          "m2/x2",
+          "m3/x1",
+          "m4/x0"
+        ]
+      },
+      "s_0_1": {
+        "ports": [
+          "s",
+          "m1/s",
+          "m2/s",
+          "m3/s",
+          "m4/s"
+        ]
+      },
+      "m1_y": {
+        "ports": [
+          "m1/y",
+          "y0"
+        ]
+      },
+      "m2_y": {
+        "ports": [
+          "m2/y",
+          "y1"
+        ]
+      },
+      "m3_y": {
+        "ports": [
+          "m3/y",
+          "y2"
+        ]
+      },
+      "m4_y": {
+        "ports": [
+          "m4/y",
+          "y3"
+        ]
+      }
+    }
+  }
+}

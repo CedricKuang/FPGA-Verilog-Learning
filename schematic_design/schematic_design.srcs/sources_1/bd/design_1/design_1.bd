@@ -1,0 +1,126 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xB256556DDD376121",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../schematic_design.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "h1": "",
+      "h2": "",
+      "o1": ""
+    },
+    "ports": {
+      "a": {
+        "direction": "I"
+      },
+      "b": {
+        "direction": "I"
+      },
+      "cin": {
+        "direction": "I"
+      },
+      "sum": {
+        "direction": "O"
+      },
+      "cout": {
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "PortType": {
+            "value": "undef",
+            "value_src": "ip_prop"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "h1": {
+        "vlnv": "xilinx.com:user:Half_adder:1.0",
+        "xci_name": "design_1_Half_adder_0_0",
+        "xci_path": "ip\\design_1_Half_adder_0_0\\design_1_Half_adder_0_0.xci",
+        "inst_hier_path": "h1"
+      },
+      "h2": {
+        "vlnv": "xilinx.com:user:Half_adder:1.0",
+        "xci_name": "design_1_Half_adder_0_1",
+        "xci_path": "ip\\design_1_Half_adder_0_1\\design_1_Half_adder_0_1.xci",
+        "inst_hier_path": "h2"
+      },
+      "o1": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "design_1_util_vector_logic_0_0",
+        "xci_path": "ip\\design_1_util_vector_logic_0_0\\design_1_util_vector_logic_0_0.xci",
+        "inst_hier_path": "o1",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "or"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "nets": {
+      "a_0_1": {
+        "ports": [
+          "a",
+          "h1/a"
+        ]
+      },
+      "b_0_1": {
+        "ports": [
+          "b",
+          "h1/b"
+        ]
+      },
+      "Half_adder_0_s": {
+        "ports": [
+          "h1/s",
+          "h2/a"
+        ]
+      },
+      "Half_adder_0_c": {
+        "ports": [
+          "h1/c",
+          "o1/Op1"
+        ]
+      },
+      "Half_adder_1_c": {
+        "ports": [
+          "h2/c",
+          "o1/Op2"
+        ]
+      },
+      "b_0_2": {
+        "ports": [
+          "cin",
+          "h2/b"
+        ]
+      },
+      "Half_adder_1_s": {
+        "ports": [
+          "h2/s",
+          "sum"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "o1/Res",
+          "cout"
+        ]
+      }
+    }
+  }
+}

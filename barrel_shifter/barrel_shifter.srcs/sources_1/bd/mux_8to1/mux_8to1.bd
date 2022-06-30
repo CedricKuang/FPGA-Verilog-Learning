@@ -1,0 +1,202 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../barrel_shifter.gen/sources_1/bd/mux_8to1",
+      "name": "mux_8to1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2"
+    },
+    "design_tree": {
+      "mux_4to1_0": "",
+      "mux_4to1_1": "",
+      "mux_4to1_2": "",
+      "xlslice_0": "",
+      "xlslice_1": ""
+    },
+    "ports": {
+      "x0": {
+        "direction": "I"
+      },
+      "x1": {
+        "direction": "I"
+      },
+      "x2": {
+        "direction": "I"
+      },
+      "x3": {
+        "direction": "I"
+      },
+      "x4": {
+        "direction": "I"
+      },
+      "x5": {
+        "direction": "I"
+      },
+      "x6": {
+        "direction": "I"
+      },
+      "x7": {
+        "direction": "I"
+      },
+      "s": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "y_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "mux_4to1_0": {
+        "vlnv": "xilinx.com:user:mux_4to1:1.0",
+        "xci_name": "mux_8to1_mux_4to1_0_0",
+        "xci_path": "ip\\mux_8to1_mux_4to1_0_0\\mux_8to1_mux_4to1_0_0.xci",
+        "inst_hier_path": "mux_4to1_0"
+      },
+      "mux_4to1_1": {
+        "vlnv": "xilinx.com:user:mux_4to1:1.0",
+        "xci_name": "mux_8to1_mux_4to1_0_1",
+        "xci_path": "ip\\mux_8to1_mux_4to1_0_1\\mux_8to1_mux_4to1_0_1.xci",
+        "inst_hier_path": "mux_4to1_1"
+      },
+      "mux_4to1_2": {
+        "vlnv": "xilinx.com:user:mux_4to1:1.0",
+        "xci_name": "mux_8to1_mux_4to1_0_2",
+        "xci_path": "ip\\mux_8to1_mux_4to1_0_2\\mux_8to1_mux_4to1_0_2.xci",
+        "inst_hier_path": "mux_4to1_2"
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "mux_8to1_xlslice_0_0",
+        "xci_path": "ip\\mux_8to1_xlslice_0_0\\mux_8to1_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "1"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "3"
+          },
+          "DOUT_WIDTH": {
+            "value": "2"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "mux_8to1_xlslice_0_1",
+        "xci_path": "ip\\mux_8to1_xlslice_0_1\\mux_8to1_xlslice_0_1.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "0"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "3"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "nets": {
+      "x0_0_1": {
+        "ports": [
+          "x0",
+          "mux_4to1_1/x0"
+        ]
+      },
+      "x1_0_1": {
+        "ports": [
+          "x1",
+          "mux_4to1_1/x1"
+        ]
+      },
+      "x2_0_1": {
+        "ports": [
+          "x2",
+          "mux_4to1_1/x2"
+        ]
+      },
+      "x3_0_1": {
+        "ports": [
+          "x3",
+          "mux_4to1_1/x3"
+        ]
+      },
+      "x0_0_2": {
+        "ports": [
+          "x4",
+          "mux_4to1_0/x0"
+        ]
+      },
+      "x1_0_2": {
+        "ports": [
+          "x5",
+          "mux_4to1_0/x1"
+        ]
+      },
+      "x2_0_2": {
+        "ports": [
+          "x6",
+          "mux_4to1_0/x2"
+        ]
+      },
+      "x3_0_2": {
+        "ports": [
+          "x7",
+          "mux_4to1_0/x3"
+        ]
+      },
+      "Din_0_1": {
+        "ports": [
+          "s",
+          "xlslice_0/Din",
+          "xlslice_1/Din"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "mux_4to1_1/s",
+          "mux_4to1_0/s"
+        ]
+      },
+      "mux_4to1_1_y": {
+        "ports": [
+          "mux_4to1_1/y",
+          "mux_4to1_2/x0"
+        ]
+      },
+      "mux_4to1_0_y": {
+        "ports": [
+          "mux_4to1_0/y",
+          "mux_4to1_2/x1"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "mux_4to1_2/s"
+        ]
+      },
+      "mux_4to1_2_y": {
+        "ports": [
+          "mux_4to1_2/y",
+          "y_0"
+        ]
+      }
+    }
+  }
+}
