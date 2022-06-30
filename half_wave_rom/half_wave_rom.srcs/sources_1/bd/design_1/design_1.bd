@@ -1,0 +1,135 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x400DCE7547256132",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../half_wave_rom.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "blk_mem_gen_0": "",
+      "c_counter_binary_0": ""
+    },
+    "ports": {
+      "CLK": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_CLK_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "10000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "en": {
+        "direction": "I"
+      },
+      "douta_0": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      }
+    },
+    "components": {
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "design_1_blk_mem_gen_0_0",
+        "xci_path": "ip\\design_1_blk_mem_gen_0_0\\design_1_blk_mem_gen_0_0.xci",
+        "inst_hier_path": "blk_mem_gen_0",
+        "parameters": {
+          "Coe_File": {
+            "value": "../../../../../../data_m.coe"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Memory_Type": {
+            "value": "Single_Port_ROM"
+          },
+          "Port_A_Write_Rate": {
+            "value": "0"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "true"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "32768"
+          },
+          "Write_Width_A": {
+            "value": "32"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      },
+      "c_counter_binary_0": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "design_1_c_counter_binary_0_0",
+        "xci_path": "ip\\design_1_c_counter_binary_0_0\\design_1_c_counter_binary_0_0.xci",
+        "inst_hier_path": "c_counter_binary_0",
+        "parameters": {
+          "CE": {
+            "value": "true"
+          },
+          "Output_Width": {
+            "value": "15"
+          }
+        }
+      }
+    },
+    "nets": {
+      "c_counter_binary_0_Q": {
+        "ports": [
+          "c_counter_binary_0/Q",
+          "blk_mem_gen_0/addra"
+        ]
+      },
+      "CLK_0_1": {
+        "ports": [
+          "CLK",
+          "c_counter_binary_0/CLK",
+          "blk_mem_gen_0/clka"
+        ]
+      },
+      "ena_0_1": {
+        "ports": [
+          "en",
+          "blk_mem_gen_0/ena",
+          "c_counter_binary_0/CE"
+        ]
+      },
+      "blk_mem_gen_0_douta": {
+        "ports": [
+          "blk_mem_gen_0/douta",
+          "douta_0"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/UCLA/OTHERS/interns/FPGA/half_wave_rom/half_wave_rom.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v,1656608766,verilog,,,,design_1_wrapper,,,,,,,,
+D:/UCLA/OTHERS/interns/FPGA/half_wave_rom/half_wave_rom.ip_user_files/bd/design_1/ip/design_1_blk_mem_gen_0_0/sim/design_1_blk_mem_gen_0_0.v,1656609668,verilog,,D:/UCLA/OTHERS/interns/FPGA/half_wave_rom/half_wave_rom.ip_user_files/bd/design_1/sim/design_1.v,,design_1_blk_mem_gen_0_0,,,,,,,,
+D:/UCLA/OTHERS/interns/FPGA/half_wave_rom/half_wave_rom.ip_user_files/bd/design_1/ip/design_1_c_counter_binary_0_0/sim/design_1_c_counter_binary_0_0.vhd,1656609668,vhdl,,,,design_1_c_counter_binary_0_0,,,,,,,,
+D:/UCLA/OTHERS/interns/FPGA/half_wave_rom/half_wave_rom.ip_user_files/bd/design_1/sim/design_1.v,1656608766,verilog,,D:/UCLA/OTHERS/interns/FPGA/half_wave_rom/half_wave_rom.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v,,design_1,,,,,,,,
+D:/UCLA/OTHERS/interns/FPGA/half_wave_rom/half_wave_rom.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
